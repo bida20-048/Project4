@@ -1,0 +1,106 @@
+/* Modern Responsive Thank You Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0a0f3c, #142850);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Container for Thank You Message */
+.container {
+    background-color: #0d486e;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    animation: fadeIn 1s ease;
+}
+
+/* Heading */
+.thank-you-container h1 {
+    font-size: 2.8rem;
+    color: #1e88e5;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+.thank-you-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Back to Homepage Button */
+.thank-you-back-btn {
+    display: inline-block;
+    background-color: #1e88e5;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.thank-you-back-btn:hover {
+    background-color: #1565c0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .thank-you-container {
+        padding: 40px 30px;
+    }
+
+    .thank-you-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .thank-you-container p {
+        font-size: 1rem;
+    }
+
+    .back-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .thank-you-container {
+        padding: 30px 20px;
+    }
+
+    .thank-you-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .thank-you-container p {
+        font-size: 0.95rem;
+    }
+
+    .back-btn {
+        font-size: 0.95rem;
+        padding: 8px 18px;
+    }
+}
